@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product Cart App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOGIN -->
+  <div id="loginPage" class="container">
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <p id="loginError"></p>
+  </div>
+
+  <!-- APP -->
+  <div id="appPage" class="hidden">
+    <div class="header">
+      <h2>Products</h2>
+      <button onclick="logout()">Logout</button>
+    </div>
+
+    <div class="main">
+      <!-- PRODUCTS -->
+      <div class="products" id="products"></div>
+
+      <!-- CART -->
+      <div class="cart">
+        <h3>Cart</h3>
+        <div id="cartItems"></div>
+        <h4>Total: ₹<span id="total">0</span></h4>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
